@@ -36,13 +36,10 @@ namespace LabTP_Projeto01_FabricioDiniz
                             Console.WriteLine("*****Calcular gastos e lucro diário do motorista do Uber*****\n");
                             Console.WriteLine("Informe a marcação do Hodômetro (Km) no inicio do dia:\n");
                             hodometroInicio = EntradasDouble();
-
                             Console.WriteLine("\nInforme a marcação do Hodômetro (Km) no fim do dia:\n");
                             hodometroFim = EntradasDouble();
-
                             Console.WriteLine("\nInforme quantos litros foram gastos:\n");
                             litrosGastos = EntradasDouble();
-
                             Console.WriteLine("\nInforme o valor total recebido dos passageiros:\n");
                             valorRecebido = EntradasDouble();
 
@@ -74,8 +71,7 @@ namespace LabTP_Projeto01_FabricioDiniz
                             Console.WriteLine("*****E se esse valor é par ou ímpar*****\n");
 
                             Console.WriteLine("\nQuantos gols foram marcados pelo Atlético?\n");
-                            golsa = EntradasInt();
-                            
+                            golsa = EntradasInt();                            
                             Console.WriteLine("\nQuantos gols foram marcados pelo Cruzeiro?\n");
                             golsc = EntradasInt();
 
@@ -133,10 +129,8 @@ namespace LabTP_Projeto01_FabricioDiniz
 
                             Console.WriteLine("\nInforma um valor (graus) para o primeiro ângulo:\n");
                             angulo1 = EntradasInt();
-
                             Console.WriteLine("\nInforma um valor (graus) para o segundo ângulo:\n");
                             angulo2 = EntradasInt();
-
                             Console.WriteLine("\nInforma um valor (graus) para o terceiro ângulo:\n");
                             angulo3 = EntradasInt();
 
@@ -239,7 +233,7 @@ namespace LabTP_Projeto01_FabricioDiniz
 
             Console.ReadKey(true);
         }
-
+        //Método para verificar entradas do tipo double
         public static double EntradasDouble()
         {
             bool verificarEntrada;
@@ -261,7 +255,7 @@ namespace LabTP_Projeto01_FabricioDiniz
 
             return entrada;
         }
-
+        //Método para verificar entradas do tipo int
         public static int EntradasInt()
         {
             bool verificarEntrada;
@@ -283,7 +277,7 @@ namespace LabTP_Projeto01_FabricioDiniz
 
             return entrada;
         }
-
+        //Método para voltar ao menu ou fechar aplicação
         public static void VoltarMenu()
         {
             string entrada = "";
